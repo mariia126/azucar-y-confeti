@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azúcar y Confeti · Dulce, salado y decoración de eventos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F1;--ink:#3A2630;--muted:#6F5A64;--accent:#B83F66;--card:#FFFDFA;--soft:#FFEFEF;--line:#F1D9DD;--band:#FFEBDA;--pistband:#E4EFD6;
+--hero:#FFE6EC;color-scheme:light;--btn:#C0486F;--cream:#FFFEFB;--rose:#FBDDE4;--pist:#E4F0D6;--gold:#F4CB7A;
+--serif:"Fraunces",Georgia,serif;--sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+section{padding:clamp(3.5rem,8vw,6.5rem) 0}
+.btn{display:inline-block;padding:.8rem 1.6rem;border-radius:999px;border:1.5px solid currentColor;font-weight:500;text-decoration:none;font-size:1rem;cursor:pointer;background:none;font-family:inherit;color:inherit}
+.btn.fill{background:var(--btn);color:#fff;border-color:var(--btn)}
+.btn.berry{background:var(--hero);color:var(--cream);border-color:var(--hero)}
+.btn:hover{transform:translateY(-2px)}
+/* cabecera */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:500 1.5rem/1 var(--serif);text-decoration:none;color:var(--accent)}
+nav{display:flex;gap:.5rem;align-items:center}
+nav a{text-decoration:none;font-size:.95rem;padding:.4rem 1rem;border:1px solid var(--line);border-radius:999px}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+nav a.cta{background:var(--btn);border-color:var(--btn);color:#fff}
+.menu{display:none;background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem 1rem;color:var(--ink);font:inherit;font-size:.95rem;cursor:pointer}
+@media(max-width:820px){
+.menu{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;background:var(--bg);padding:1rem clamp(1.1rem,4vw,2rem) 1.4rem;border-bottom:1px solid var(--line)}
+nav.open{display:flex}
+nav a{text-align:center;padding:.8rem 1rem}}
+/* hero */
+.hero{background:var(--hero) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Ccircle cx='20' cy='30' r='4' fill='%23F4B8C6'/%3E%3Crect x='90' y='20' width='14' height='5' rx='2' fill='%23E9A83A' transform='rotate(35 97 22)'/%3E%3Crect x='130' y='90' width='14' height='5' rx='2' fill='%23BFD6A6' transform='rotate(-30 137 92)'/%3E%3Ccircle cx='60' cy='110' r='3' fill='%23E9A83A'/%3E%3Crect x='20' y='130' width='12' height='5' rx='2' fill='%23F4B8C6' transform='rotate(60 26 132)'/%3E%3Ccircle cx='140' cy='145' r='4' fill='%23BFD6A6'/%3E%3C/svg%3E");color:var(--ink);padding:clamp(2.5rem,6vw,4.5rem) 0 0;overflow:hidden}
+.hero .wrap{display:grid;gap:2rem;align-items:end}
+.hero h1{font-size:clamp(3.2rem,12vw,7.4rem);letter-spacing:-.02em}
+.hero h1 em{display:block;font-weight:400;font-size:.62em;margin-top:.1em}
+.hero p.lead{font-size:clamp(1.1rem,2.4vw,1.35rem);max-width:30ch;margin:1.4rem 0 2rem;color:var(--muted)}
+.hero .acts{display:flex;gap:.8rem;flex-wrap:wrap;padding-bottom:2rem}
+.arch{background:#FFEEE2;border-radius:999px 999px 0 0;width:min(100%,420px);justify-self:center;padding:3.5rem 1.5rem 0;aspect-ratio:4/4.6;display:flex;align-items:flex-end}
+.arch svg{width:100%;height:auto;display:block}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1.25fr 1fr}.hero .acts{padding-bottom:4rem}.hero .txt{padding-bottom:0}}
+/* tres mundos */
+.head{max-width:34ch;margin-bottom:2.6rem}
+.head h2{font-size:clamp(2rem,5vw,3.2rem)}
+.head h2 em,.ev h2 em{font-weight:400}
+.three{display:grid;gap:1.4rem}
+@media(min-width:760px){.three{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden;display:flex;flex-direction:column}
+.card .pic{padding:1.6rem 1.6rem 0;display:grid;place-items:center;height:230px}
+.card .pic svg{height:100%;width:auto;max-width:100%}
+.card .tx{padding:1.4rem 1.6rem 1.8rem}
+.card h3{font-size:1.7rem;margin-bottom:.5rem}
+.card p{color:var(--muted)}
+.card a{display:inline-block;margin-top:1rem;color:var(--accent);font-weight:500}
+/* carta */
+.carta{background:var(--soft)}
+.rule{display:flex;align-items:center;gap:1.2rem;margin-bottom:2.4rem}
+.rule h2{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--accent);white-space:nowrap}
+.rule::after{content:"";height:1px;background:var(--accent);flex:1;opacity:.6}
+.menu4{display:grid;gap:1.2rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.menu4{grid-template-columns:repeat(4,1fr);gap:1.6rem}}
+.it .pic{border-radius:24px;aspect-ratio:1;display:grid;place-items:center;padding:12%}
+.it .pic svg{width:100%;height:100%}
+.it h3{font-size:1.25rem;margin:1rem 0 .3rem}
+.it p{font-size:.95rem;color:var(--muted);line-height:1.5}
+.it:nth-child(1) .pic{background:var(--pist)}.it:nth-child(2) .pic{background:#FBE8BE}.it:nth-child(3) .pic{background:var(--rose)}.it:nth-child(4) .pic{background:#F2E6D8}
+.note{margin-top:2.2rem;text-align:center;color:var(--muted)}
+/* eventos */
+.ev{background:var(--band);color:var(--ink)}
+.ev .wrap{display:grid;gap:3rem;align-items:center}
+@media(min-width:860px){.ev .wrap{grid-template-columns:1fr 1fr}}
+.ev h2{font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:1.2rem}
+.ev .lead{color:var(--muted);max-width:46ch}
+.ev ul{list-style:none;padding:0;margin:2rem 0 2.2rem;display:grid;gap:1rem}
+.ev li{border-left:3px solid var(--accent);padding-left:1rem}
+.ev li b{display:block;font:500 1.3rem/1.2 var(--serif)}
+.ev li span{color:var(--muted);font-size:.95rem}
+.ev .vis{background:var(--card);border-radius:28px;padding:2rem;display:grid;place-items:center;border:1px solid var(--line)}
+.ev .vis svg{width:100%;max-width:420px;height:auto}
+/* proceso */
+.steps{display:grid;gap:1.4rem;counter-reset:s}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{border-top:2px solid var(--accent);padding-top:1.2rem}
+.step::before{counter-increment:s;content:counter(s);font:italic 400 2.6rem/1 var(--serif);color:var(--accent);display:block;margin-bottom:.6rem}
+.step h3{font-size:1.5rem;margin-bottom:.4rem}
+.step p{color:var(--muted)}
+/* banda */
+.band{background:var(--pistband);color:var(--ink);padding:2.6rem 0}
+.band .wrap{display:grid;gap:1.4rem;align-items:center}
+@media(min-width:860px){.band .wrap{grid-template-columns:1fr 1fr 1fr 1.4fr}}
+.band b{display:block;font:500 1.3rem/1.2 var(--serif)}
+.band small{font-size:.95rem}
+.band .big{font:500 clamp(1.6rem,3vw,2.2rem)/1.15 var(--serif)}
+/* contacto */
+.ways{display:grid;gap:1rem}
+@media(min-width:760px){.ways{grid-template-columns:repeat(3,1fr)}}
+.way{display:grid;gap:.3rem;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:1.7rem;text-decoration:none}
+.way b{font:500 1.7rem/1.1 var(--serif);color:var(--accent)}
+.way span{color:var(--muted);overflow-wrap:anywhere}
+.way:hover{border-color:var(--accent)}
+/* pie */
+footer{background:var(--soft);color:var(--ink);padding:2.8rem 0 calc(2.2rem + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.6rem 3rem;justify-content:space-between;align-items:center}
+footer .logo{color:var(--accent);font-size:1.7rem}
+footer .links{display:flex;gap:1.4rem;flex-wrap:wrap}
+footer a{text-decoration:none;opacity:.85}
+footer a:hover{opacity:1;text-decoration:underline}
+footer small{width:100%;opacity:.6;border-top:1px solid var(--line);padding-top:1.2rem}
+.view{display:none}.view.on{display:block}
+.back{display:inline-block;margin-bottom:1.6rem;color:var(--accent);font-weight:500}
+.gh{max-width:46ch;margin-bottom:1.6rem}
+.gh h1{font-size:clamp(2.8rem,9vw,5rem);margin-bottom:.8rem}
+.gh p{color:var(--muted)}
+.pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.pills a{text-decoration:none;padding:.45rem 1.2rem;border:1px solid var(--line);border-radius:999px}
+.pills a[aria-current]{background:var(--btn);border-color:var(--btn);color:#fff}
+.mos{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:760px){.mos{grid-template-columns:repeat(3,1fr);gap:1.4rem}.tile:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}}
+.tile{margin:0;border-radius:26px;aspect-ratio:1;display:grid;place-items:center;padding:12% 12% 20%;position:relative;overflow:hidden;color:#3F2D36}
+.tile::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.4)}
+.tile svg{width:100%;height:100%;position:relative}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1rem;font-size:.95rem;font-weight:500;text-align:center;background:rgba(255,255,255,.65)}
+.cta-row{margin-top:2.6rem;text-align:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="cake" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="84" ry="9" fill="#000" opacity=".14"/><rect x="26" y="112" width="148" height="62" rx="12" fill="#BFD6A6"/><rect x="48" y="70" width="104" height="48" rx="12" fill="#FFF7F0"/><rect x="48" y="70" width="104" height="14" rx="7" fill="#F4B8C6"/><circle cx="62" cy="86" r="7" fill="#F4B8C6"/><circle cx="84" cy="90" r="8" fill="#F4B8C6"/><circle cx="108" cy="87" r="7" fill="#F4B8C6"/><circle cx="130" cy="91" r="8" fill="#F4B8C6"/><circle cx="144" cy="86" r="6" fill="#F4B8C6"/><circle cx="80" cy="62" r="9" fill="#C0224F"/><circle cx="102" cy="56" r="9" fill="#C0224F"/><circle cx="122" cy="63" r="8" fill="#C0224F"/><circle cx="92" cy="64" r="3.5" fill="#7FA05B"/><circle cx="114" cy="60" r="3.5" fill="#7FA05B"/><rect x="97" y="30" width="6" height="20" rx="2" fill="#E9A83A"/><ellipse cx="100" cy="25" rx="4" ry="6" fill="#F2762E"/><circle cx="50" cy="132" r="4" fill="#F4B8C6"/><circle cx="80" cy="150" r="4" fill="#E9A83A"/><circle cx="116" cy="136" r="4" fill="#FFF7F0"/><circle cx="148" cy="152" r="4" fill="#F4B8C6"/><circle cx="64" cy="158" r="3" fill="#FFF7F0"/><circle cx="136" cy="128" r="3" fill="#E9A83A"/></symbol>
+<symbol id="burger" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="76" ry="8" fill="#000" opacity=".14"/><path d="M32 94Q32 36 100 36Q168 36 168 94Z" fill="#E9A83A"/><ellipse cx="72" cy="58" rx="6" ry="3" fill="#FFF3D6" transform="rotate(-20 72 58)"/><ellipse cx="102" cy="48" rx="6" ry="3" fill="#FFF3D6"/><ellipse cx="132" cy="60" rx="6" ry="3" fill="#FFF3D6" transform="rotate(20 132 60)"/><ellipse cx="94" cy="72" rx="6" ry="3" fill="#FFF3D6" transform="rotate(10 94 72)"/><path d="M26 100q10-12 20 0t20 0t20 0t20 0t20 0t20 0t20 0v8H26z" fill="#7FA05B"/><path d="M30 106H170L160 120L148 110L130 122L112 110L96 122L80 110L62 122L46 110L36 120Z" fill="#F2C230"/><rect x="30" y="118" width="140" height="24" rx="12" fill="#6B3A2A"/><path d="M34 146H166Q166 172 142 172H58Q34 172 34 146Z" fill="#E9A83A"/></symbol>
+<symbol id="cup" viewBox="0 0 200 200"><ellipse cx="100" cy="178" rx="60" ry="7" fill="#000" opacity=".14"/><path d="M54 110H146L132 174H68Z" fill="#8E1F45"/><path d="M80 112L86 172M100 112V172M120 112L114 172" stroke="#C0224F" stroke-width="3" fill="none"/><ellipse cx="100" cy="106" rx="54" ry="18" fill="#F4B8C6"/><ellipse cx="100" cy="84" rx="40" ry="16" fill="#FBE6EA"/><ellipse cx="100" cy="64" rx="26" ry="13" fill="#F4B8C6"/><circle cx="100" cy="46" r="9" fill="#C0224F"/><rect x="72" y="80" width="10" height="4" rx="2" fill="#E9A83A" transform="rotate(30 77 82)"/><rect x="112" y="86" width="10" height="4" rx="2" fill="#BFD6A6" transform="rotate(-25 117 88)"/><rect x="92" y="96" width="10" height="4" rx="2" fill="#8E1F45"/><rect x="66" y="102" width="10" height="4" rx="2" fill="#BFD6A6" transform="rotate(-20 71 104)"/><rect x="124" y="102" width="10" height="4" rx="2" fill="#E9A83A" transform="rotate(25 129 104)"/></symbol>
+<symbol id="quiche" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="76" ry="8" fill="#000" opacity=".14"/><circle cx="100" cy="100" r="74" fill="#D98E3F"/><circle cx="100" cy="100" r="62" fill="#F7E3A3"/><circle cx="70" cy="80" r="13" fill="#7FA05B"/><circle cx="70" cy="80" r="6" fill="#F7E3A3"/><circle cx="118" cy="72" r="13" fill="#7FA05B"/><circle cx="118" cy="72" r="6" fill="#F7E3A3"/><circle cx="130" cy="112" r="13" fill="#7FA05B"/><circle cx="130" cy="112" r="6" fill="#F7E3A3"/><circle cx="84" cy="128" r="13" fill="#7FA05B"/><circle cx="84" cy="128" r="6" fill="#F7E3A3"/><circle cx="100" cy="100" r="8" fill="#E9A83A"/><circle cx="104" cy="148" r="5" fill="#C0224F"/><circle cx="52" cy="108" r="5" fill="#C0224F"/><circle cx="144" cy="84" r="5" fill="#C0224F"/></symbol>
+<symbol id="balloons" viewBox="0 0 240 240"><path d="M70 126C80 170 110 190 120 214M122 108C116 160 118 190 120 214M172 130C160 170 130 190 120 214M104 128C108 170 116 190 120 214" stroke="#F4B8C6" stroke-width="2" fill="none"/><ellipse cx="68" cy="84" rx="33" ry="41" fill="#F4B8C6"/><ellipse cx="124" cy="62" rx="33" ry="41" fill="#C0224F"/><ellipse cx="174" cy="90" rx="33" ry="41" fill="#E9A83A"/><ellipse cx="104" cy="96" rx="31" ry="39" fill="#BFD6A6"/><ellipse cx="56" cy="68" rx="6" ry="10" fill="#fff" opacity=".35"/><ellipse cx="112" cy="46" rx="6" ry="10" fill="#fff" opacity=".35"/><rect x="40" y="214" width="160" height="10" rx="5" fill="#FBE6EA"/><rect x="62" y="224" width="116" height="10" rx="3" fill="#8E1F45"/><rect x="52" y="196" width="5" height="18" fill="#FFF7F0"/><ellipse cx="54.5" cy="192" rx="3" ry="5" fill="#F2762E"/><rect x="183" y="196" width="5" height="18" fill="#FFF7F0"/><ellipse cx="185.5" cy="192" rx="3" ry="5" fill="#F2762E"/></symbol>
+</defs>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio">Azúcar y Confeti</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#dulces">Dulce</a>
+      <a href="#salados">Salado</a>
+      <a href="#decoracion">Decoración</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a class="cta" href="#contacto">Pedir presupuesto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio"><div class="view on" id="v-inicio">
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="txt">
+        <h1>Azúcar <em>y confeti</em></h1>
+        <p class="lead">Tartas, comida salada y decoración de eventos, hechas a mano y a tu medida.</p>
+        <div class="acts">
+          <a class="btn fill" href="#contacto">Pedir presupuesto</a>
+          <a class="btn" href="#dulces">Ver la carta</a>
+        </div>
+      </div>
+      <div class="arch" role="img" aria-label="Ilustración de una tarta de dos pisos con frambuesas"><svg viewBox="0 0 200 200"><use href="#cake"/></svg></div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="head"><h2>Todo lo que hace falta para <em>celebrar</em></h2></div>
+      <div class="three">
+        <article class="card"><div class="pic" style="background:var(--rose)"><svg viewBox="0 0 200 200" role="img" aria-label="Tarta"><use href="#cake"/></svg></div><div class="tx"><h3>Dulce</h3><p>Tartas, cupcakes, galletas decoradas y mesas dulces para cada ocasión.</p><a href="#dulces">Ver dulces</a></div></article>
+        <article class="card"><div class="pic" style="background:#FBE8BE"><svg viewBox="0 0 200 200" role="img" aria-label="Hamburguesa"><use href="#burger"/></svg></div><div class="tx"><h3>Salado</h3><p>Hamburguesas, quiches y bandejas para compartir, listas para servir.</p><a href="#salados">Ver salados</a></div></article>
+        <article class="card"><div class="pic" style="background:var(--pist)"><svg viewBox="0 0 240 240" role="img" aria-label="Globos y mesa decorada"><use href="#balloons"/></svg></div><div class="tx"><h3>Eventos</h3><p>Ambientación, globos, mesas y montaje para que todo encaje.</p><a href="#decoracion">Ver decoración</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <div class="rule"><h2>Lo más pedido</h2></div>
+      <div class="menu4">
+        <article class="it"><div class="pic"><svg viewBox="0 0 200 200" role="img" aria-label="Tarta"><use href="#cake"/></svg></div><h3>Tarta de frambuesa y pistacho</h3><p>Bizcocho suave, crema ligera y frutos rojos.</p></article>
+        <article class="it"><div class="pic"><svg viewBox="0 0 200 200" role="img" aria-label="Hamburguesa"><use href="#burger"/></svg></div><h3>Mini hamburguesas</h3><p>Ternera, queso y pan brioche, en bandeja de 12.</p></article>
+        <article class="it"><div class="pic"><svg viewBox="0 0 200 200" role="img" aria-label="Cupcake"><use href="#cup"/></svg></div><h3>Cupcakes de confeti</h3><p>Vainilla con buttercream y sprinkles de colores.</p></article>
+        <article class="it"><div class="pic"><svg viewBox="0 0 200 200" role="img" aria-label="Quiche"><use href="#quiche"/></svg></div><h3>Quiche de puerro</h3><p>Masa quebrada, puerro y queso curado.</p></article>
+      </div>
+      <p class="note">Todo se prepara por encargo. Pregúntanos por opciones sin gluten o veganas.</p>
+    </div>
+  </section>
+
+  <section class="ev" id="eventos">
+    <div class="wrap">
+      <div>
+        <h2>Decoramos el lugar, <em>no solo la mesa</em></h2>
+        <p class="lead">Diseñamos y montamos la ambientación de tu celebración: mesas, flores, globos, guirnaldas y detalles a medida.</p>
+        <ul>
+          <li><b>Bodas y bautizos</b><span>Mesas dulces y saladas con la decoración a juego.</span></li>
+          <li><b>Cumpleaños y baby showers</b><span>Globos, tartas temáticas y rincones para fotos.</span></li>
+          <li><b>Eventos de empresa</b><span>Catering ligero y ambientación con tu imagen.</span></li>
+        </ul>
+        <a class="btn fill" href="#contacto">Contarnos mi evento</a>
+      </div>
+      <div class="vis" role="img" aria-label="Globos de colores sobre una mesa con velas"><svg viewBox="0 0 240 240"><use href="#balloons"/></svg></div>
+    </div>
+  </section>
+
+  <section id="proceso">
+    <div class="wrap">
+      <div class="head"><h2>Así trabajamos</h2></div>
+      <div class="steps">
+        <div class="step"><h3>Cuéntanos tu idea</h3><p>Fecha, número de invitados y el estilo que imaginas.</p></div>
+        <div class="step"><h3>Recibe tu presupuesto</h3><p>Te enviamos una propuesta de menú y decoración.</p></div>
+        <div class="step"><h3>Nosotros nos encargamos</h3><p>Preparamos, entregamos y montamos en el lugar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <div><b>Hecho por encargo</b><small>Cada pedido, único</small></div>
+      <div><b>Ingredientes frescos</b><small>Cocinados esa semana</small></div>
+      <div><b>Montaje incluido</b><small>En el lugar de tu evento</small></div>
+      <p class="big">Hagamos de tu celebración algo especial</p>
+    </div>
+  </div>
+
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <div class="head"><h2>Hablemos de tu celebración</h2><p style="color:var(--muted);margin-top:1rem">Escríbenos o llámanos y te respondemos con una propuesta.</p></div>
+      <div class="ways">
+        <a class="way" href="tel:+34600000000"><b>Teléfono</b><span>+34 600 000 000</span></a>
+        <a class="way" href="mailto:hola@azucarconfeti.es"><b>Correo</b><span>hola@azucarconfeti.es</span></a>
+        <a class="way" href="https://instagram.com/azucarconfeti" target="_blank" rel="noopener"><b>Instagram</b><span>@azucarconfeti</span></a>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="view" id="v-gal"><section><div class="wrap" id="gal"></div></section></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#inicio">Azúcar y Confeti</a>
+    <div class="links"><a href="#dulces">Dulce</a><a href="#salados">Salado</a><a href="#decoracion">Decoración</a><a href="#contacto">Contacto</a></div>
+    <small>© 2026 Azúcar y Confeti. Dulce, salado y decoración de eventos.</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector(".menu"),n=document.getElementById("nav");
+  b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+  n.addEventListener("click",function(e){if(e.target.tagName==="A"){n.classList.remove("open");b.setAttribute("aria-expanded",false)}});
+  var G={
+   dulces:{n:"Dulce",p:"Tartas, cupcakes y mesas dulces, hechos a medida para cada celebración.",i:[["cake","#F9CDD7","Tarta de frambuesa y pistacho"],["cup","#FBE4B5","Cupcakes de confeti"],["cake","#D6E8C4","Tarta de cumpleaños"],["cup","#FFE5D3","Cupcakes de boda"],["cake","#F3E1F0","Tarta de dos pisos"],["cup","#D9ECF2","Mesa dulce"]]},
+   salados:{n:"Salado",p:"Hamburguesas, quiches y bandejas para compartir, listas para servir.",i:[["burger","#FBE4B5","Mini hamburguesas"],["quiche","#D6E8C4","Quiche de puerro"],["burger","#F9CDD7","Hamburguesa clásica"],["quiche","#FFE5D3","Quiche de verduras"],["burger","#D9ECF2","Bandeja para compartir"],["quiche","#F3E1F0","Tartaleta de queso"]]},
+   decoracion:{n:"Decoración",p:"Ambientaciones para bodas, cumpleaños y eventos de empresa.",i:[["balloons","#F9CDD7","Arco de globos"],["balloons","#FBE4B5","Mesa de cumpleaños"],["balloons","#D6E8C4","Boda en jardín"],["balloons","#D9ECF2","Baby shower"],["balloons","#F3E1F0","Evento de empresa"],["balloons","#FFE5D3","Rincón de fotos"]]}
+  };
+  var home=document.getElementById("v-inicio"),gal=document.getElementById("v-gal"),box=document.getElementById("gal");
+  function route(){
+    var h=location.hash.slice(1);
+    if(G.hasOwnProperty(h)){
+      var g=G[h],tabs=Object.keys(G).map(function(x){return '<a href="#'+x+'"'+(x===h?' aria-current="page"':'')+'>'+G[x].n+'</a>'}).join("");
+      var tiles=g.i.map(function(t){var d=t[0]==="balloons"?240:200;return '<figure class="tile" style="background:'+t[1]+'"><svg viewBox="0 0 '+d+' '+d+'" role="img" aria-label="'+t[2]+'"><use href="#'+t[0]+'"/></svg><figcaption>'+t[2]+'</figcaption></figure>'}).join("");
+      box.innerHTML='<a class="back" href="#inicio">Volver al inicio</a><div class="gh"><h1>'+g.n+'</h1><p>'+g.p+'</p></div><div class="pills">'+tabs+'</div><div class="mos">'+tiles+'</div><p class="cta-row"><a class="btn fill" href="#contacto">Pedir presupuesto</a></p>';
+      home.classList.remove("on");gal.classList.add("on");document.title=g.n+" · Azúcar y Confeti";window.scrollTo(0,0);
+    }else{
+      gal.classList.remove("on");home.classList.add("on");document.title="Azúcar y Confeti · Dulce, salado y decoración de eventos";
+      var el=h&&document.getElementById(h);
+      if(el){el.scrollIntoView()}else{window.scrollTo(0,0)}
+    }
+  }
+  window.addEventListener("hashchange",route);route();
+})();
+</script>
+</body>
+</html>
